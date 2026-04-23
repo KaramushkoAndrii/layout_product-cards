@@ -48,10 +48,8 @@
 
   &__review {
     width: 53px;
-    height: 16px;
     font-weight: $font-weight-description;
     font-size: $font-size-small;
-    line-height: 14px;
     text-align: end;
   }
 
@@ -80,7 +78,7 @@
     }
   }
 
-  &__button {
+  &__link {
     box-sizing: border-box;
     border: 1px solid transparent;
     border-radius: $main-border-radius;
@@ -94,20 +92,12 @@
     font-size: 14px;
     line-height: 16px;
     padding: 0;
-
-    &:hover {
-      color: $main-blue;
-      background-color: $main-white;
-      border-color: $main-blue;
-    }
-  }
-
-  &__link {
     color: $main-white;
     text-decoration: none;
 
     &:hover {
       color: $main-blue;
+      background-color: $main-white;
     }
   }
 }
