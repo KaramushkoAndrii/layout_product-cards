@@ -1,0 +1,113 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  width: $card-width;
+  border: 1px solid transparent;
+  padding: ($card-pading * 2) $card-pading $card-pading;
+
+  &__img {
+    width: 160px;
+    height: 134px;
+    background-image: url(../images/imac.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  &__title {
+    width: 166px;
+    height: 36px;
+    padding-top: 40px;
+    padding-bottom: 4px;
+    font-weight: $font-weight-title;
+    font-size: $font-size-medium;
+    line-height: 18px;
+  }
+
+  &__rating {
+    margin-top: 16px;
+    margin-bottom: 24px;
+    width: 166px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 16px;
+  }
+
+  &__description {
+    width: 98px;
+    height: 14px;
+    font-size: $font-size-small;
+    font-weight: $font-weight-description;
+    line-height: 14px;
+    color: $main-grey;
+    align-self: flex-start;
+  }
+
+  &__review {
+    width: 53px;
+    height: 16px;
+    font-weight: $font-weight-description;
+    font-size: $font-size-small;
+    line-height: 14px;
+    text-align: end;
+  }
+
+  &__price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 166px;
+    padding-bottom: 16px;
+
+    &-title {
+      width: 31px;
+      height: 18px;
+      font-weight: $font-weight-description;
+      font-size: $font-size-medium;
+      line-height: 18px;
+      color: $main-grey;
+    }
+
+    &-value {
+      width: 50px;
+      height: 18px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+
+  &__button {
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    border-radius: $main-border-radius;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 166px;
+    height: 40px;
+    background-color: $main-blue;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 0;
+
+    &:hover {
+      color: $main-blue;
+      background-color: $main-white;
+      border-color: $main-blue;
+    }
+  }
+
+  &__link {
+    color: $main-white;
+    text-decoration: none;
+
+    &:hover {
+      color: $main-blue;
+    }
+  }
+}
